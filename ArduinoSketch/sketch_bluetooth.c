@@ -30,8 +30,6 @@ void loop() {
   if(Serial.available() > 0){   // Caso a porta serial esteja disponível
     state = Serial.read();      // Atribui valor lido a variável state
     flag = 1;
-    Serial.print("State: ");
-    Serial.println(state);
   }
   switch(state){
     case '0':
